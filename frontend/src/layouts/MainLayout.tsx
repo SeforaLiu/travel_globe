@@ -76,9 +76,7 @@ export const MainLayout: React.FC<Props> = ({ dark, setDark, handleClickLogout }
 
       {/* 主内容区 */}
       <div
-        className={`flex-1 min-w-0 transition-all duration-300 ease-in-out ${
-          showSidebar && !isMobile ? 'ml-72' : 'ml-0'
-        }`}
+        className={`flex-1 min-w-0`}
       >
         {loading?<Loading dark={dark}/>: <Outlet />}
       </div>
